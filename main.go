@@ -7,7 +7,6 @@ import (
 	"github.com/gorilla/mux"
 )
 
-
 func home(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "text/html")
 	fmt.Fprint(w, "<h1>Welcom to my awesome site!</h1>")
@@ -20,7 +19,7 @@ func contact(w http.ResponseWriter, r *http.Request) {
 
 func faq(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "text/html")
-	fmt.Fprint(w, "What questions do you have?")
+	fmt.Fprint(w, "<h1>Frequently Asked Questions</h1><p>Here is a list of questions that our users commonly asked.</p>")
 }
 
 func main() {
